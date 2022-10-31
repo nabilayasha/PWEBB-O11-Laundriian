@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/logo.png">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#" class="logo"><img src="images/rsz_logo.png" alt=""></a>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="layanan.html">Layanan</a></li>
+				<li><a href="mitra.html">Mitra</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+            <form>     
+                <input class="search" type="search"placeholder="Search..."></form>
+                <input class="button" type="submit" value="Search">
+                
+                <ul class="profile">
+                    <img src="images/pr.png" alt="">&nbsp
+                    <!-- <img src="images/rsz_activity.jpg" alt="">&nbsp 
+                    <img src="images/rsz_love.png" alt=""> -->
+                
+                </ul>
+		</header>
+		<div class="content">
+			<div class="textBox">
+			<h2>It's not just Laundry<br>It's<span> Laundriann</span></h2>
+			<p>Anda penasaran benefit apa yang akan di dapat? Ayo, jadilah bagian dari kami! 
+			</p>
+			<a href="mitra.html">Bergabung dengan mitra</a>
+			</div>
+			<div class="imgBox">
+				<img src="images/Tengah.png" alt="" class="">
+			</div>
+		</div>
+		<ul class="sci">
+			<li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li> 
+			<li><a href="#"><img src="images/wat.png" alt="Whatssap"></a></li>
+			<li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+		</ul>		
+	</section>
+    
+	
+	<script type="text/javascript">
+		function imgSlider(anything){
+		document.querySelector('.').src = anything;
+		}
+
+		function changeCircleColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+		
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		} 
+	</script>
+    </body>
+</html>
